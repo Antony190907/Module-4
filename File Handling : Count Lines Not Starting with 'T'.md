@@ -24,7 +24,7 @@ for lines in f:
         count+=1
 
 print(count)
-
+```
 
 ## Output
 <img width="230" height="40" alt="image" src="https://github.com/user-attachments/assets/9c02d3b6-482a-4470-b937-8e27d34e928c" />
