@@ -1,197 +1,187 @@
 ## NAME: ANTONY YOUVAN YUVARAJA A
 ## REG NO: 212225060020
-## Classes and Objects in Python: Calculate the Area of a Circle
+# Classes and Objects in Python: Calculate the Area of a Circle
 
-🎯 Aim
+## 🎯 Aim
+To write a Python program that calculates the **area of a circle** based on the radius provided by the user. This program uses a class named `cse` and a method `mech` to perform the calculation.
 
-To write a Python program that calculates the area of a circle based on the radius provided by the user. This program uses a class named cse and a method mech to perform the calculation.
+## 🧠 Algorithm
+1. **Get user input**: Take the radius of the circle as input from the user.
+2. **Define the class**: Create a class named `cse`.
+3. **Define the method**: Inside the class, define the method `mech` to calculate the area of the circle using the formula:  
+   Area = pi *r^2 
+4. **Execute the program**: Create an object of the class and call the method with the radius value.
 
-🧠 Algorithm
-
-Get user input: Take the radius of the circle as input from the user.
-Define the class: Create a class named cse.
-Define the method: Inside the class, define the method mech to calculate the area of the circle using the formula:
-Area = pi *r^2
-Execute the program: Create an object of the class and call the method with the radius value.
-
-🧾 Program
-
+## 🧾 Program
 ```
 import math
-class Cse:
-    def mech(self,radius):
-        area=math.pi*radius*radius
-        print(f"Area of circle: {area:.2f}")
+class cse():
+    def mech(Self,num):
+        a=math.pi*num*num
+        print(f"Area of circle: {a:.2f}")
+
 r=int(input())
-obj=Cse()
+
+obj=cse()
+
 obj.mech(r)
 ```
+## Output
+<img width="557" height="132" alt="image" src="https://github.com/user-attachments/assets/7b8823a4-ac16-48df-ae0a-72be95ac888a" />
 
-Output:
-<img width="825" height="225" alt="image" src="https://github.com/user-attachments/assets/507144d6-f2a5-4b23-a386-0bd511fc51da" />
-
-
-Result:
-
-Thus to write a Python program that calculates the area of a circle based on the radius provided by the user. This program uses a class named cse and a method mech to perform the calculation is done successfully.
-
+## Result
+Thus the program has been successfully executed
 ## Dictionary Operations in Python: Merging Two Dictionaries
 
-🎯 Aim
+## 🎯 Aim
+To write a Python program that merges **two dictionaries** and combines their key-value pairs.
 
-To write a Python program that merges two dictionaries and combines their key-value pairs.
+## 🧠 Algorithm
+1. Define two dictionaries `dict1` and `dict2` with some key-value pairs.
+2. Define a function `merge()` that merges the two dictionaries using the `**` unpacking operator.
+   - The merged result will combine keys from both dictionaries. If a key exists in both, the value from `dict2` will overwrite that from `dict1`.
+3. Call the `merge()` function and print the merged dictionary.
 
-🧠 Algorithm
-
-Define two dictionaries dict1 and dict2 with some key-value pairs.
-Define a function merge() that merges the two dictionaries using the ** unpacking operator.
-The merged result will combine keys from both dictionaries. If a key exists in both, the value from dict2 will overwrite that from dict1.
-Call the merge() function and print the merged dictionary.
-
-🧾 Program
-
+## 🧾 Program
 ```
-dict1 = {'a': 1, 'b': 2, 'c': 3}
-dict2 = {'b': 99, 'd': 4}
-def merge(d1, d2):
-    return {**d1, **d2}
-merged_dict = merge(dict1, dict2)
-print(merged_dict)
+dict1={'Ten': 10,'Twenty': 20,'Thirty': 30}
+
+dict2={'Thirty': 30,'Fourty': 40,'Fifty': 50} 
+
+def merge (dict1,dict2):
+
+    res={**dict1 , **dict2}
+    return res
+dict3=merge(dict1,dict2)
+
+print(dict3)
 ```
-
-Output:
-
-<img width="1437" height="211" alt="image" src="https://github.com/user-attachments/assets/561e6dbb-138b-4ca3-b4f5-337d1b14c796" />
-
-Result:
-
-Thus to write a Python program that merges two dictionaries and combines their key-value pairs is done successfully.
+## Output
+<img width="552" height="110" alt="image" src="https://github.com/user-attachments/assets/d3363af6-a34c-49b0-9597-602d539a6cf4" />
 
 
-## 🔤 Dictionary-Python Program to Sort a Dictionary by Keys and Values
+## Result
+Thus, the program has been successfully executed
+# 🔤 Dictionary-Python Program to Sort a Dictionary by Keys and Values
+
 This Python program demonstrates how to sort a dictionary:
+- Alphabetically by keys
+- Alphabetically by values
 
-Alphabetically by keys
-Alphabetically by values
+---
 
-🎯 Aim
+## 🎯 Aim
 
 To write a Python program that sorts a dictionary's:
+- Keys in alphabetical order
+- Values in alphabetical order
 
-Keys in alphabetical order
-Values in alphabetical order
+---
 
-🧠 Algorithm
+## 🧠 Algorithm
 
-Start the program.
-Define a dictionary with key-value pairs.
-Sort by Keys:
-Use sorted(dictionary.items())
-Convert the result to a dictionary using dict()
-Sort by Values:
-Use sorted(dictionary.items(), key=lambda item: item[1])
-Convert the result to a dictionary using dict()
-Display the original and sorted dictionaries.
-End the program.
+1. **Start the program.**
+2. **Define** a dictionary with key-value pairs.
+3. **Sort by Keys**:
+   - Use `sorted(dictionary.items())`
+   - Convert the result to a dictionary using `dict()`
+4. **Sort by Values**:
+   - Use `sorted(dictionary.items(), key=lambda item: item[1])`
+   - Convert the result to a dictionary using `dict()`
+5. **Display** the original and sorted dictionaries.
+6. **End the program.**
 
-🧪Program
+---
 
+## 🧪Program
 ```
-d={2: 56, 1: 2, 4: 24, 6: 18, 3: 323, 5: 12}
-sorted_items=sorted(d.items(),key=lambda x:x[1])
-print("Keys and Values sorted in alphabetical order by the value")
-print(sorted_items)
+def dictionairy():
+    key_value ={}
+
+    key_value[2] = 56
+
+    key_value[1] = 2
+
+    key_value[5] = 12
+
+    key_value[4] = 24
+
+    key_value[6] = 18
+
+    key_value[3] = 323
+
+    print ("Keys and Values sorted in alphabetical order by the value")
+
+    print(sorted(key_value.items(), key = lambda kv:(kv[1], kv[0]))
+dictionary()
 ```
+## Sample Output
+<img width="557" height="113" alt="image" src="https://github.com/user-attachments/assets/2e0f7e6a-f059-4ef9-bcde-ca80b91aeada" />
 
-Sample Output:
+## Result
+Thus, the program has been successfully executed
+# Exception Handling in Python: Avoiding Index Errors
 
-<img width="1233" height="194" alt="image" src="https://github.com/user-attachments/assets/f07244cc-6463-471e-80e7-136a794a05fc" />
+## 🎯 Aim
+To write a Python program that handles an **IndexError** when trying to access an element beyond the available range of a list.
 
-Result:
+## 🧠 Algorithm
+1. Define a list `list1` with some integer elements.
+2. Use a **try-except** block:
+   - In the `try` block, attempt to access an index that is out of range (e.g., `list1[5]`).
+   - In the `except` block, catch the error and print a custom message `"You're out of list range"`.
+3. Print the result based on whether the index access succeeds or fails.
 
-Thus the Python program demonstrates how to sort a dictionary:
-Alphabetically by keys
-Alphabetically by values is done successfully.
-
-
-## Exception Handling in Python: Avoiding Index Errors
-
-🎯 Aim
-
-To write a Python program that handles an IndexError when trying to access an element beyond the available range of a list.
-
-🧠 Algorithm
-
-Define a list list1 with some integer elements.
-Use a try-except block:
-In the try block, attempt to access an index that is out of range (e.g., list1[5]).
-In the except block, catch the error and print a custom message "You're out of list range".
-Print the result based on whether the index access succeeds or fails.
-
-🧾 Program
-
-```
-try:
-    n=int(input())
-    a=[]
-    for i in range(n):
-        num=int(input())
-        a.append(num)
-    index=int(input())    
-    print(a)
-    print(a[index])
-except IndexError:
-    print(f"{index} is not accepted")
+## 🧾 Program
 ```
 
-Output:
-
-<img width="712" height="377" alt="image" src="https://github.com/user-attachments/assets/d96e6192-b83f-4ee9-a5a3-9a9e4521401b" />
-
-Result:
-
-Thus to write a Python program that handles an IndexError when trying to access an element beyond the available range of a list is done successfully.
-
-
-## File Handling in Python: Count Lines Not Starting with 'T'
-
-🎯 Aim
-
-To write a Python program that counts the number of lines in a text file story.txt that do not start with the alphabet 'T'.
-
-🧠 Algorithm
-
-Open the file story.txt in read mode.
-Initialize a counter count to zero.
-Iterate through each line of the file:
-Check if the first character of the line is not 'T'.
-If the line does not start with 'T', increment the count by 1.
-After processing all lines, print the count value, which represents the number of lines that do not start with 'T'.
-
-🧾 Program
-
-```
-count = 0
+list1=[5, 10, 20]
 
 try:
-    with open('story.txt', 'r') as file:
-        for line in file:
-            if not line.strip().startswith('T'):
-                count += 1
-    print(count)
-except FileNotFoundError:
-    print("The file 'story.txt' was not found.")
+
+    print(list1[5])
+
+except:
+
+    print("You're out of list range")
 ```
 
-Output:
+## Output
+<img width="371" height="92" alt="image" src="https://github.com/user-attachments/assets/a53f170d-eff1-4ed7-acd5-ecdb07bcfe96" />
 
-<img width="682" height="173" alt="image" src="https://github.com/user-attachments/assets/ce807ccf-933e-4962-ac63-9a912474f760" />
+## Result
+Thus, the program has been successfully executed
+# File Handling in Python: Count Lines Not Starting with 'T'
 
+## 🎯 Aim
+To write a Python program that counts the number of lines in a text file `story.txt` that do **not** start with the alphabet `'T'`.
 
-Result:
+## 🧠 Algorithm
+1. Open the file `story.txt` in **read mode**.
+2. Initialize a counter `count` to zero.
+3. Iterate through each line of the file:
+   - Check if the first character of the line is **not** `'T'`.
+   - If the line does not start with `'T'`, increment the `count` by 1.
+4. After processing all lines, print the `count` value, which represents the number of lines that do not start with `'T'`.
 
-Thus to write a Python program that counts the number of lines in a text file story.txt that do not start with the alphabet 'T' is done successfully.
+## 🧾 Program
+```
+f=open("story.txt","r")
 
+count=0
 
+for lines in f:
 
+    if lines [0] not in 'T':
+
+        count+=1
+
+print(count)
+```
+
+## Output
+<img width="230" height="40" alt="image" src="https://github.com/user-attachments/assets/9c02d3b6-482a-4470-b937-8e27d34e928c" />
+
+## Result
+Thus, the program has been successfully executed
 
